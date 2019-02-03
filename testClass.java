@@ -139,17 +139,19 @@ public class testClass {
           System.out.println(str2);
   }
 */
+
 //Задача №13
   public static void main(String args[]) {
       String S = "13";
+      System.out.println(S);
       int X = Integer.parseInt(S);
+      System.out.println(X);
       double Y = X;
-
       System.out.println(Y);
 
   }
 
-
+  
 }
 
 
