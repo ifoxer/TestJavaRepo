@@ -119,9 +119,12 @@ public class testClass {
 //Задача №10
   public static void main(String args[]) {
       String text = "Привет мир!";
-      System.out.print(text);
-  }
-
+      //System.out.print(text);
+      //}
+//Задача №11
+      String prb = text.replaceAll(" ", "");
+          System.out.print(prb);
+      }
 
 }
 
