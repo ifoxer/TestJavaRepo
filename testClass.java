@@ -126,7 +126,7 @@ public class testClass {
       String prb = text.replaceAll(" ", "");
           System.out.print(prb);
       }
-*/
+
 //Задача №12
   public static void main(String args[]) {
       String str1 = "Прекрасный мир";
@@ -138,8 +138,16 @@ public class testClass {
       }else
           System.out.println(str2);
   }
+*/
+//Задача №13
+  public static void main(String args[]) {
+      String S = "13";
+      int X = Integer.parseInt(S);
+      double Y = X;
 
+      System.out.println(Y);
 
+  }
 
 
 }
