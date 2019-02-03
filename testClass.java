@@ -40,7 +40,7 @@ public class testClass {
 //пример: вводим 11110000 получаем 240
 
 */
-
+/*
 //Задача №6
   public static void main(String args[]) {
 
@@ -64,7 +64,15 @@ public class testClass {
     //  sc.close();
 
   }
-
+*/
+//Задача №7
+  public static void main(String args[]) {
+      int i = 1;
+      while (i <= 50){
+          System.out.println(i);
+          i++;
+      }
+  }
 
 
 }
