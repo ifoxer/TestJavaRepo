@@ -116,6 +116,7 @@ public class testClass {
 
   }
 */
+/*
 //Задача №10
   public static void main(String args[]) {
       String text = "Привет мир!";
@@ -125,6 +126,21 @@ public class testClass {
       String prb = text.replaceAll(" ", "");
           System.out.print(prb);
       }
+*/
+//Задача №12
+  public static void main(String args[]) {
+      String str1 = "Прекрасный мир";
+      String str2 = "Привет прекрасный мир";
+      int a = str1.length();
+      int b = str2.length();
+      if (a > b ){
+          System.out.println(str1);
+      }else
+          System.out.println(str2);
+  }
+
+
+
 
 }
 
