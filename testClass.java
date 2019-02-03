@@ -65,6 +65,7 @@ public class testClass {
 
   }
 */
+/*
 //Задача №7
   public static void main(String args[]) {
       int i = 1;
@@ -73,8 +74,18 @@ public class testClass {
           i++;
       }
   }
+*/
+//Задача №8
+  public static void main(String args[]) {
+      int mass[] = {20,38,45,96,52};
 
-
+      System.out.print("Вывод элементов массива mass: ");
+      int t = 2;
+      for(int elm : mass) {
+          t *= elm;
+          System.out.print(t + ", ");
+      }
+  }
 }
 
 
