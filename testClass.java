@@ -88,6 +88,7 @@ public class testClass {
       }
   }
 */
+/*
 //Задача №9
   public static void main(String args[]) {
       int matrix[][] = new int[3][4];
@@ -113,6 +114,12 @@ public class testClass {
           System.out.print(t+", ");
       }
 
+  }
+*/
+//Задача №10
+  public static void main(String args[]) {
+      String text = "Привет мир!";
+      System.out.print(text);
   }
 
 
