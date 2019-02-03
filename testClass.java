@@ -75,6 +75,7 @@ public class testClass {
       }
   }
 */
+/*
 //Задача №8
   public static void main(String args[]) {
       int mass[] = {20,38,45,96,52};
@@ -86,6 +87,35 @@ public class testClass {
           System.out.print(t + ", ");
       }
   }
+*/
+//Задача №9
+  public static void main(String args[]) {
+      int matrix[][] = new int[3][4];
+
+      matrix[0][1] = 2;
+      matrix[0][2] = 4;
+      matrix[0][3] = 6;
+      matrix[1][1] = 3;
+      matrix[1][2] = 9;
+      matrix[2][2] = 7;
+//вывод значений всего массива:
+      for (int i = 0; i < 3; i++){
+          for (int j = 0; j < 4; j++){
+
+              System.out.print(matrix[i][j]);
+          }
+          System.out.println();
+      }
+//вывод первой строчки умноженной на 3:
+      for (int j = 0; j < 4; j++){
+          int t = 3;
+          t *= matrix[0][j];
+          System.out.print(t+", ");
+      }
+
+  }
+
+
 }
 
 
