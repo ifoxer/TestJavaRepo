@@ -2,25 +2,25 @@ import java.io.*;
 
 //Задача №15
 public class testFileR {
-/*
-    public static void main(String[] args) {
+    /*
+        public static void main(String[] args) {
 
-        try(FileReader reader = new FileReader("primer.txt"))
-        {
+            try(FileReader reader = new FileReader("primer.txt"))
+            {
 
-            int r;
-            while((r=reader.read())!=-1){
+                int r;
+                while((r=reader.read())!=-1){
 
-                System.out.print((char)r);
+                    System.out.print((char)r);
+                }
+            }
+            catch(IOException ex){
+
+                System.out.println(ex.getMessage());
             }
         }
-        catch(IOException ex){
-
-            System.out.println(ex.getMessage());
-        }
-    }
- */
-
+     */
+/*
 //Задача №16
 
     public static void main(String[] args) {
@@ -48,4 +48,49 @@ public class testFileR {
 
 
     }
+*/
+//Задача №17
+    public static void main(String[] args) {
+
+//читаем файл
+        try (BufferedReader br = new BufferedReader
+                (new FileReader("primer.txt")))
+        {
+
+            String r;
+            while ((r = br.readLine()) != null) {
+                System.out.print("Текст из файла: "+r+"\n");
+
+            }
+
+        }catch (IOException ex ){
+
+            System.out.println("ошибка ввода-вывода:" + ex);
+        }
+
+//перезаписываем в файл
+        try (FileWriter writer = new FileWriter("primer.txt", false)) {
+                // запись строки
+                String text = "Hello world 2";
+                writer.write(text);
+                System.out.println("Перезаписанный текст: "+text);
+
+                writer.flush();
+        } catch (IOException ex) {
+
+                System.out.println("ошибка ввода-вывода:" + ex);
+            }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
