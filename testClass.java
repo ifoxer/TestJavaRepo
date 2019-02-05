@@ -1,45 +1,47 @@
 import java.util.Scanner;
 
+
+
 public class testClass {
 
   /*  public static void main(String args[]) {
         System.out.println("Hello,world!");
     }  */
 
-/*
-//Задание №4
-    public static void main(String args[]) {
-        //1. Ввод трех чисел с клавиатуры X,Y,Z
-        int X = 15;
-        int Y = 25;
-        int Z = 13;
-        //2. Нахождение и вывод на экран среднего арифметического чисел X,Y,Z
-        int A = X+Y+Z;
-        int S = A/3;
-        System.out.println(S);
-        //3. Деление среднего арифметического на 2 без остатка
-        int D = S/2;
-        System.out.println(D);
-        //4. Если полученное число больше 3, то вывести на экран сообщение "Программа выполнена корректно"
-        if (D > 3);
-        System.out.println("Программа выполнена корректно");
+    /*
+    //Задание №4
+        public static void main(String args[]) {
+            //1. Ввод трех чисел с клавиатуры X,Y,Z
+            int X = 15;
+            int Y = 25;
+            int Z = 13;
+            //2. Нахождение и вывод на экран среднего арифметического чисел X,Y,Z
+            int A = X+Y+Z;
+            int S = A/3;
+            System.out.println(S);
+            //3. Деление среднего арифметического на 2 без остатка
+            int D = S/2;
+            System.out.println(D);
+            //4. Если полученное число больше 3, то вывести на экран сообщение "Программа выполнена корректно"
+            if (D > 3);
+            System.out.println("Программа выполнена корректно");
 
-    }
+        }
 
-//Задание №5
-  public static void main(String args[]) {
+    //Задание №5
+      public static void main(String args[]) {
 
-      Scanner sc = new Scanner (System.in);
-      System.out.println ("Ввести значение в бинарном формате:");
-      String s = sc.nextLine();
-      int a = Integer.parseInt(s,2);
-      System.out.println (a);
-      sc.close ();
-    }
+          Scanner sc = new Scanner (System.in);
+          System.out.println ("Ввести значение в бинарном формате:");
+          String s = sc.nextLine();
+          int a = Integer.parseInt(s,2);
+          System.out.println (a);
+          sc.close ();
+        }
 
-//пример: вводим 11110000 получаем 240
+    //пример: вводим 11110000 получаем 240
 
-*/
+    */
 /*
 //Задача №6
   public static void main(String args[]) {
@@ -139,7 +141,7 @@ public class testClass {
           System.out.println(str2);
   }
 */
-
+/*
 //Задача №13
   public static void main(String args[]) {
       String S = "13";
@@ -150,9 +152,42 @@ public class testClass {
       System.out.println(Y);
 
   }
+ */
+//Задача №14
+    public static void main(String[] args) {
 
-  
+        int arr[] = {25, 97, 82, 62, 5};
+        bubbleSort(arr);
+    }
+
+    public static void bubbleSort(int[] arr) {
+        for (int i = arr.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int a = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = a;
+                }
+            }
+        }
+        for (int i = 0; i < arr.length; i++)
+
+            System.out.println(arr[i]);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
