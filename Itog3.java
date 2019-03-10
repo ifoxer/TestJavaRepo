@@ -5,10 +5,10 @@ public class Itog3 {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите текущий курс валюты: ");
-        float i = sc.nextFloat();
+        double i = sc.nextFloat();
         System.out.println("Введите колличество рублей: ");
-        float x = sc.nextFloat();
-        float y = i / x;
+        double x = sc.nextFloat();
+        double y = x / i;
         System.out.println(y);
     }
 }
