@@ -27,8 +27,9 @@ public class Itog2 {
                 }
             }
         }
+        System.out.println("Результат сортировки: ");
         for (int i = 0; i < arr.length; i++)
 
-            System.out.println(arr[i]);
+            System.out.print(arr[i]+", ");
     }
 }
