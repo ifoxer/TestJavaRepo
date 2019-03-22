@@ -19,7 +19,7 @@ public class Zadacha7 {
         }else if(T == Z){
             System.out.println("Данное значение имеется в константах");
         }else
-            System.out.println("OK!");
+            System.out.println("Такой константы нет!");
 
           sc.close();
 
